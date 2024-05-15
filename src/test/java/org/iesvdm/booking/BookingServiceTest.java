@@ -64,7 +64,9 @@ public class BookingServiceTest {
      */
     @Test
     void getAvailablePlaceCountTest() {
+        BookingService mock = Mockito.mock(BookingService.class);
 
+        Mockito.when(mock.getAvailablePlaceCount()).thenReturn(anyList().size());
     }
 
     /**
